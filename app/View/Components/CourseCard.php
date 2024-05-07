@@ -24,19 +24,9 @@ class CourseCard extends Component
      * @return void
      */
     public function __construct(
-        $id,
-        $title,
-        $category,
-        $price,
-        $count,
-        $photo
+
     ) {
-        $this->id = $id;
-        $this->title = $title;
-        $this->category = $category;
-        $this->price = $price;
-        $this->count = $count;
-        $this->photo = $photo;
+
     }
 
     /**

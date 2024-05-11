@@ -223,11 +223,11 @@
                                 d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
                         </svg>
                     </span>
-                    <form action="{{ route('course.search') }}">
+                    {{-- <form action="{{ route('course.search') }}">
                         <input type="search" name="search"
                             class="transition w-full text-xs rounded-full border-1 border-zinc-500 p-4 pl-12 bg-slate-100 outline-none dark:bg-[#303150] dark:text-white"
                             placeholder="Cari Materi.." />
-                    </form>
+                    </form> --}}
                 </div>
                 <ul class="mt-3 list-none">
                     <li class="py-3">
@@ -248,10 +248,10 @@
                             <ul class="list-none">
                                 @foreach ($categories as $category)
                                     <li class="">
-                                        <a href="{{ route('category.show', [$category->id]) }}"
+                                        {{-- <a href="{{ route('category.show', [$category->id]) }}"
                                             class="block py-2 text-sm bg-white hover:bg-slate-50 hover:text-blue-600 dark:bg-zinc-800 dark:hover:bg-zinc-700">
                                             {{ $category->name }}
-                                        </a>
+                                        </a> --}}
                                     </li>
                                 @endforeach
                             </ul>
@@ -275,17 +275,17 @@
                     <div class="flex mt-5 gap-2">
                         <!-- button masuk -->
                         <div class="relative">
-                            <a href="{{ route('login') }}"
+                            {{-- <a href="{{ route('login') }}"
                                 class="inline-flex items-center w-full px-6 py-3 text-sm font-medium text-black align-middle rounded-full select-none bg-zinc-200 dark:bg-zinc-100 border-slate-800 sm:mb-0 sm:w-auto hover:bg-zinc-300 dark:hover:bg-zinc-200 ">
                                 Masuk
-                            </a>
+                            </a> --}}
                         </div>
                         <!-- button daftar -->
                         <div class="relative">
-                            <a href="{{ route('register') }}"
+                            {{-- <a href="{{ route('register') }}"
                                 class="inline-flex items-center w-full px-6 py-3 text-sm font-medium text-white align-middle bg-blue-600 rounded-full select-none sm:mb-0 sm:w-auto hover:opacity-95">
                                 Daftar
-                            </a>
+                            </a> --}}
                         </div>
                     </div>
                 @endif
@@ -314,27 +314,7 @@
                     <h1 class="my-2 text-xl font-medium text-center">Keluar</h1>
                     <h3 class="mt-2 mb-5 text-sm font-normal text-zinc-500 dark:text-zinc-400">Anda yakin ingin keluar?
                     </h3>
-                    <form action="{{ route('logout') }}" method="POST">
-                        @csrf
-                        {{-- <button type="submit"
-                            class="text-white hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-lg text-sm inline-flex items-center px-5 py-2.5 text-center mr-2">
-                            iyah
-                        </button> --}}
-                        <div class="flex w-full gap-2 p-2">
-                            <button data-modal-hide="popup-modal-logout" type="button"
-                                class="w-full overflow-hidden text-sm rounded-lg text-zinc-500 bg-zinc-200 hover:bg-zinc-100 focus:ring-4 hover:text-zinc-900 focus:z-10 dark:bg-zinc-700 dark:text-zinc-300 dark:border-zinc-500 dark:hover:text-white dark:hover:bg-zinc-600 dark:focus:ring-zinc-600">
-                                <div class="px-5 py-2 rounded-lg bg-zinc-200 dark:bg-zinc-700">
-                                    Batal
-                                </div>
-                            </button>
-                            <button type="submit"
-                                class="z-50 w-full overflow-hidden text-sm rounded-lg text-zinc-500 focus:ring-4 focus:outline-none focus:ring-zinc-200 hover:text-zinc-900 focus:z-10 dark:bg-zinc-700 dark:text-zinc-300 dark:border-zinc-500 dark:hover:text-white dark:hover:bg-zinc-600 dark:focus:ring-zinc-600">
-                                <div class="px-5 py-2 text-white bg-red-600 ">
-                                    Keluar
-                                </div>
-                            </button>
-                        </div>
-                    </form>
+
                 </div>
             </div>
         </div>

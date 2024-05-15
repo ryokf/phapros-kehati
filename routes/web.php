@@ -57,28 +57,28 @@ Route::controller(HomeController::class)->group(function () {
 //     Route::post('/certificate-download', 'download')->name('certificate.download');
 // });
 
-// Route::controller(CourseController::class)->group(function () {
+Route::controller(CourseController::class)->group(function () {
 
-//     Route::get('/course-all', 'all')->name('course.index.all');
-//     Route::get('/course-show/{id}', 'show')->name('course.show');
-//     Route::get('/course/{id}', 'detailCourse')->name('course.detail');
-//     Route::get('/course', 'index')->middleware('auth')->name('course.index');
-//     Route::get('/course-search', 'search')->name('course.search');
+    Route::get('/course-all', 'all')->name('course.index.all');
+    Route::get('/course-show/{id}', 'show')->name('course.show');
+    Route::get('/course/{id}', 'detailCourse')->name('course.detail');
+    Route::get('/course', 'index')->middleware('auth')->name('course.index');
+    Route::get('/course-search', 'search')->name('course.search');
 
-//     Route::middleware(['role:author', 'auth'])->group(function () {
-//         Route::get('/course-create', 'create')->name('course.create');
-//         Route::post('/course', 'store')->name('course.store');
-//         Route::get('/course-edit/{id}', 'edit')->name('course.edit');
-//         Route::put('/course', 'update')->name('course.update');
-//         Route::delete('/course', 'delete')->name('course.delete');
-//     });
+    Route::middleware(['role:author', 'auth'])->group(function () {
+        Route::get('/course-create', 'create')->name('course.create');
+        Route::post('/course', 'store')->name('course.store');
+        Route::get('/course-edit/{id}', 'edit')->name('course.edit');
+        Route::put('/course', 'update')->name('course.update');
+        Route::delete('/course', 'delete')->name('course.delete');
+    });
 
-//     //index course
-//     Route::get('/course-admin', 'indexAdmin')->name('course.index.admin');
+    //index course
+    Route::get('/course-admin', 'indexAdmin')->name('course.index.admin');
 
-//     //lihat lesson
+    //lihat lesson
 
-// });
+});
 
 // Route::controller(LessonController::class)->group(function () {
 //     // Route::get('/lesson', 'show')->middleware('auth')->name('lesson.show');

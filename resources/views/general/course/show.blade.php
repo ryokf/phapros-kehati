@@ -4,7 +4,7 @@
     <section>
 
         <div class="items-start justify-center px-4 pt-8 pb-12 md:flex 2xl:px-20 md:px-6">
-            <div class="hidden xl:w-2/6 lg:w-2/5 w-80 md:block">
+            {{-- <div class="hidden xl:w-2/6 lg:w-2/5 w-80 md:block">
                 <img class="w-full shadow-inner rounded-xl shadow-white" alt="{{ $course->title }}"
                     src="{{ asset('storage/' . $course->photo) }}" />
 
@@ -13,13 +13,14 @@
                 <img class="w-full shadow-inner rounded-xl shadow-white" alt="{{ $course->title }}"
                     src="{{ asset('storage/' . $course->photo) }}" />
 
-            </div>
-            <div class="mt-6 xl:w-2/5 md:w-1/2 lg:ml-8 md:ml-6 md:mt-0">
+            </div> --}}
+            {{-- <div class="mt-6 xl:w-2/5 md:w-1/2 lg:ml-8 md:ml-6 md:mt-0"> --}}
+                <div class="mt-6 w-2/3 lg:ml-8 md:ml-6 md:mt-0">
                 <div class="pb-6 border-b border-gray-200">
 
                     <h1 class="my-2 text-3xl font-semibold text-gray-800 lg:text-4xl lg:leading-normal dark:text-white">
                         {{ $course->title }}</h1>
-                    <div class="flex mt-4 ">
+                    {{-- <div class="flex mt-4 ">
                         <div class="flex ">
                             <span class="bg-[#FFE7D2] text-[#FF8D3F] p-2 rounded text-[10px] font-bold">
                                 <p>{{ $course->category->name }}</p>
@@ -29,7 +30,7 @@
                             <p class="mt-1 text-gray-400">{{ count($course->lessons) }} Lesson</p>
                         </div>
 
-                    </div>
+                    </div> --}}
                 </div>
                 <div class="flex flex-col items-start py-4 border-b border-gray-200 ">
                     <p class="text-lg leading-4 text-gray-800 dark:text-gray-300">Description</p>
@@ -40,7 +41,7 @@
                     </div>
                 </div>
                 <div class="flex items-center justify-between py-4 border-b border-gray-200">
-                    @if ($course->price == 0)
+                    {{-- @if ($course->price == 0)
                         <a href="{{ route('freeCourse', ['id_course' => $course->id]) }}"
                             class=" focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 text-base flex items-center justify-center leading-none text-white bg-gradient-to-bl from-cyan-400 dark:from-purple-600 via-10% to-blue-500 dark:to-purple-700 shadow-inner shadow-zinc-100 dark:shadow-zinc-300 transition-all w-full py-4 hover:bg-gray-700 focus:outline-none rounded-lg">
                             Start Free Course
@@ -50,13 +51,13 @@
                         <button class="px-6 py-2 text-white bg-indigo-500 rounded-md hover:bg-indigo-600">
                             Enroll Now
                         </button>
-                    @endif
+                    @endif --}}
                 </div>
                 @php
                     $menit = count($course->lessons) * 10;
                     $no = 1;
                 @endphp
-                <div class="flex flex-col items-start py-4 border-b border-gray-200 ">
+                {{-- <div class="flex flex-col items-start py-4 border-b border-gray-200 ">
                     <p class="text-lg leading-4 text-gray-800 dark:text-gray-300">Course Content</p>
                     <p class="text-base leading-4 text-gray-800 dark:text-gray-300">{{ count($course->lessons) }}
                         sections • {{ $menit }} minutes total length</p>
@@ -88,7 +89,7 @@
                         @endforeach
                     </ul>
 
-                </div>
+                </div> --}}
 
 
             </div>
@@ -99,7 +100,7 @@
 
 
     </section>
-    <section>
+    {{-- <section>
         <div class="bg-white dark:bg-[#303150]  py-6 sm:py-14">
             <div class="px-6 mx-auto max-w-7xl lg:px-8">
                 <div class="max-w-2xl mx-auto sm:text-center">
@@ -186,5 +187,5 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
 @endsection

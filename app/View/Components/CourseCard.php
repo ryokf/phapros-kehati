@@ -24,9 +24,9 @@ class CourseCard extends Component
      * @return void
      */
     public function __construct(
-
+        $id,
     ) {
-
+        $this->id = $id;
     }
 
     /**

@@ -8,7 +8,7 @@
  background-position: center;
 ">
         <div class="w-full py-20 md:py-36 bg-zinc-800 bg-opacity-80">
-            <div class="px-80 py-36">
+            <div class="px-60 py-36">
 
                 <h2 class="text-6xl font-black mb-1 pb-1 md:pb-0 text-white">
                     PT Phapros Tbk
@@ -106,7 +106,7 @@
                 <div class="swiper-wrapper">
                     {{-- @foreach ($latestCourse as $course) --}}
                         <div class="swiper-slide">
-                            <x-course-card />
+                            <x-course-card id="1"/>
                         </div>
                     {{-- @endforeach --}}
                 </div>

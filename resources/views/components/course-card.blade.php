@@ -1,6 +1,6 @@
 <div>
-    {{-- <a href="{{ route('course.detail', $id) }}"> --}}
-    <a href="/">
+    <a href="{{ route('course.detail', $id) }}">
+    {{-- <a href="/"> --}}
         <div class="rounded-xl overflow-hidden shadow-lg bg-white dark:bg-[#303150] dark:text-white dark:shadow-none">
             {{-- <img src="{{ asset('storage/' . $photo) }}" class="object-cover w-full h-48" /> --}}
             <div class="px-4 py-4">

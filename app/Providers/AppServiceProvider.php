@@ -6,6 +6,7 @@ use App\Models\Category;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Routing\UrlGenerator;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -24,7 +25,7 @@ class AppServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function boot()
+    public function boot(UrlGenerator $url)
     {
         View::composer('layouts.home-layout', function ($view) {
             $categories = Category::leftJoin('courses', 'categories.id', '=', 'courses.id_category')
@@ -45,5 +46,10 @@ class AppServiceProvider extends ServiceProvider
                 ->get();
             $view->with('categories', $categories);
         });
+
+        if(env('APP_ENV') !== 'local')
+        {
+            $url->forceSchema('https');
+        }
     }
 }

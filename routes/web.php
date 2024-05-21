@@ -59,11 +59,11 @@ Route::controller(HomeController::class)->group(function () {
 
 Route::controller(CourseController::class)->group(function () {
 
-    Route::get('/course-all', 'all')->name('course.index.all');
-    Route::get('/course-show/{id}', 'show')->name('course.show');
-    Route::get('/course/{id}', 'detailCourse')->name('course.detail');
-    Route::get('/course', 'index')->middleware('auth')->name('course.index');
-    Route::get('/course-search', 'search')->name('course.search');
+    Route::get('/article-all', 'all')->name('course.index.all');
+    Route::get('/article-show/{id}', 'show')->name('course.show');
+    Route::get('/article/{id}', 'detailCourse')->name('course.detail');
+    Route::get('/article', 'index')->middleware('auth')->name('course.index');
+    Route::get('/article-search', 'search')->name('course.search');
 
     Route::middleware(['role:author', 'auth'])->group(function () {
         Route::get('/course-create', 'create')->name('course.create');

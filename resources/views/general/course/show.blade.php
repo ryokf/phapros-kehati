@@ -33,11 +33,15 @@
                     </div> --}}
                 </div>
                 <div class="flex flex-col items-start py-4 border-b border-gray-200 ">
-                    <p class="text-lg leading-4 text-gray-800 dark:text-gray-300">Description</p>
+                    {{-- <p class="text-lg leading-4 text-gray-800 dark:text-gray-300">Description</p> --}}
                     <div class="flex items-center justify-center dark:text-gray-300">
-                        <p class="text-sm leading-none text-gray-600 ">
+                        <p class="text-sm text-gray-600 ">
                             {!! $course->description !!}
                         </p>
+                    </div>
+                    <div class="my-5 grid grid-cols-2 w-full">
+                        <img src="{{ asset('Picture2.png') }}" alt="">
+                        <img src="{{ asset('Picture3.png') }}" alt="">
                     </div>
                 </div>
                 <div class="flex items-center justify-between py-4 border-b border-gray-200">

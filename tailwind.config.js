@@ -13,10 +13,10 @@ module.exports = {
         extend: {
             fontFamily: {
                 poppins: ["Poppins", "sans-serif"]
-              },
+            },
             container: {
                 padding: "2rem"
-              }
+            }
         },
     },
 

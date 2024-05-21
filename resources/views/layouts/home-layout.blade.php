@@ -8,36 +8,40 @@
     <title>Phapros Kehati</title>
 
     <script src="https://kit.fontawesome.com/c473da0646.js" crossorigin="anonymous"></script>
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    {{-- @vite(['resources/css/app.css', 'resources/js/app.js']) --}}
 
     <!-- Font Awesome icons -->
-    <link rel="stylesheet" href="./landingpage/css/font-awesome/css/all.min.css" />
+    {{-- <link rel="stylesheet" href="./landingpage/css/font-awesome/css/all.min.css" /> --}}
+    {{-- <link rel="stylesheet" href="{{ asset('/landingpage/css/font-awesome/css/all.min.css') }}" /> --}}
+    <link rel="stylesheet" href="https://9930-36-80-132-148.ngrok-free.app/build/assets/app-3969a407.css" />
+    <link rel="stylesheet" href="https://9930-36-80-132-148.ngrok-free.app/build/assets/app-4d615ca8.js" />
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <!-- Slick Carousel CSS -->
-    <link rel="stylesheet" href="./landingpage/vendors/slick/slick.css" />
-    <link rel="stylesheet" href="./landingpage/vendors/slick/slick-theme.css" />
+    {{-- <link rel="stylesheet" href="{{ asset('/landingpage/vendors/slick/slick.css') }}" />
+    <link rel="stylesheet" href="{{ asset('/landingpage/vendors/slick/slick-theme.css') }}" /> --}}
 
     <!-- Swiper CSS -->
     <link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
     <!-- Style -->
-    <link rel="stylesheet" href="./landingpage/css/style.css" />
+    {{-- <link rel="stylesheet" href="./landingpage/css/style.css" /> --}}
 
-
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <!-- Style -->
-    <link rel="stylesheet" href="{{ asset('landingpage/css/style.css') }}" />
+    {{-- <link rel="stylesheet" href="{{ asset('/landingpage/css/style.css') }}" /> --}}
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500&display=swap" rel="stylesheet" />
 
-    <link rel="icon" type="image/x-icon" href="{{ asset('landingpage/images/logo_phapros.jpg') }}">
+    {{-- <link rel="icon" type="image/x-icon" href="{{ asset('/landingpage/images/logo_phapros.jpg') }}"> --}}
 </head>
 
-<body class="font-poppins text-zinc-800 overflow-x-hidden dark:bg-[#1b1b36] bg-zinc-50" id="top">
+<body class="font-poppins text-zinc-800 overflow-x-hidden dark:bg-[#1b1b36] bg-zinc-50 flex flex-col justify-between min-h-screen" id="top">
     <!-- Start Navbar -->
     <nav class="bg-white shadow p-4 sticky top-0 z-50 dark:bg-[#1b1b36]">
         <div class="container mx-auto">
@@ -295,10 +299,11 @@
     </nav>
     <!-- End Navbar -->
 
-    @yield('body')
-
+    <div class="">
+        @yield('body')
+    </div>
     <!-- Start Footer Section -->
-    <footer class="bg-blue-800 dark:bg-[#1b1b36] py-2">
+    <footer class="bg-blue-800 dark:bg-[#1b1b36] py-2 sticky top-[100vh] w-full">
 
             <div class="text-white text-center">2024 copyright PT Phapros Tbk</div>
 
@@ -326,17 +331,17 @@
 
     <!-- Scripts -->
     <!-- Jquery JS -->
-    <script src="{{ asset('landingpage/vendors/jquery/jquery-3.6.0.min.js') }}"></script>
+    <script src="{{ asset('/landingpage/vendors/jquery/jquery-3.6.0.min.js') }}"></script>
 
     <!-- Slick Carousel JS -->
-    <script src="{{ asset('landingpage/vendors/slick/slick.min.js') }}"></script>
+    <script src="{{ asset('/landingpage/vendors/slick/slick.min.js') }}"></script>
 
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <!-- Main JS -->
-    <script src="{{ asset('landingpage/js/main.js') }}"></script>
-    <script src="{{ asset('js/main.js') }}"></script>
+    <script src="{{ asset('/landingpage/js/main.js') }}"></script>
+    {{-- <script src="{{ asset('/js/main.js') }}"></script> --}}
     <script>
         function dropDown() {
             document.querySelector("#submenu").classList.toggle("hidden");

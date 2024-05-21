@@ -47,9 +47,12 @@
     <!-- Start Categories By Divisi Section -->
     <section id="categories">
         <div class="container mx-auto my-20">
-            <h2 class="font-medium text-3xl my-12 text-center text-orange-500 dark:text-white">
+            <h2 class="font-medium text-3xl mt-12 text-center text-orange-500 dark:text-white">
                 Tentang kami
             </h2>
+            <div class="flex justify-center mt-4 mb-12">
+                <hr class="w-10 border-blue-500 border-2" />
+            </div>
 
             <div class="grid grid-cols-3 gap-8 w-10/12 m-auto">
                 <div class="col-span-1 rounded-lg overflow-hidden">
@@ -101,7 +104,7 @@
     <section id="courses" class="bg-blue-700 mt-40">
         <div class="container mx-auto py-10">
             <h2 class="font-bold text-3xl text-center mb-4 text-white">Artikel kami</h2>
-            <p class="mb-10 text-center text-orange-400">Artikel terbaru kami yang selalu up-to-date</p>
+            <p class="mb-10 text-center text-white opacity-70">Artikel terbaru kami yang selalu up-to-date</p>
             <div class="swiper swiper-container-2 slide-container py-3 px-10">
                 <div class="swiper-wrapper">
                     {{-- @foreach ($latestCourse as $course) --}}

@@ -8,13 +8,13 @@
     <title>Phapros Kehati</title>
 
     <script src="https://kit.fontawesome.com/c473da0646.js" crossorigin="anonymous"></script>
-    {{-- @vite(['resources/css/app.css', 'resources/js/app.js']) --}}
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
 
     <!-- Font Awesome icons -->
     {{-- <link rel="stylesheet" href="./landingpage/css/font-awesome/css/all.min.css" /> --}}
     {{-- <link rel="stylesheet" href="{{ asset('/landingpage/css/font-awesome/css/all.min.css') }}" /> --}}
-    <link rel="stylesheet" href="https://9930-36-80-132-148.ngrok-free.app/build/assets/app-3969a407.css" />
-    <link rel="stylesheet" href="https://9930-36-80-132-148.ngrok-free.app/build/assets/app-4d615ca8.js" />
+    {{-- <link rel="stylesheet" href="https://9930-36-80-132-148.ngrok-free.app/build/assets/app-3969a407.css" />
+    <link rel="stylesheet" href="https://9930-36-80-132-148.ngrok-free.app/build/assets/app-4d615ca8.js" /> --}}
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">

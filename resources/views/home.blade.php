@@ -8,13 +8,13 @@
  background-position: center;
 ">
         <div class="w-full py-20 md:py-36 bg-zinc-800 bg-opacity-80">
-            <div class="px-60 py-36">
+            <div class="px-10 lg:px-60 py-36">
 
-                <h2 class="text-6xl font-black mb-1 pb-1 md:pb-0 text-white">
+                <h2 class="text-4xl md:text-5xl lg:text-6xl font-black mb-1 pb-1 md:pb-0 text-white">
                     PT Phapros Tbk
                 </h2>
                 {{-- <h2 class="font-semibold text-4xl pb-3 md:pb-0 dark:text-white dark:font-bold">Learning Platfrom</h2> --}}
-                <p class=" text-zinc-200 font-light text-xl max-w-3xl my-3 px-0 md:mt-4 mt-1">
+                <p class=" text-zinc-200 font-light text-sm md:text-base lg:text-xl max-w-3xl my-3 px-0 md:mt-4 mt-1">
                     Menjadi perusahaan farmasi terkemuka yang menghasilkan produk kesehatan terbaik guna meningkatkan
                     kualitas hidup masyarakat.
                 </p>
@@ -54,18 +54,20 @@
                 <hr class="w-10 border-blue-500 border-2" />
             </div>
 
-            <div class="grid grid-cols-3 gap-8 w-10/12 m-auto">
-                <div class="col-span-1 rounded-lg overflow-hidden">
-                    <img class="w-full h-full" src="{{ asset('landingpage/images/tentang_phapros.png') }}" alt="">
+            <div class="grid grid-cols-1 xl:grid-cols-3 gap-8 w-10/12 m-auto">
+                <div class="col-span-1 m-auto md:w-3/4 md:h-3/4  xl:w-full xl:h-full  rounded-xl overflow-hidden">
+                    <img class="w-full h-full " src="{{ asset('landingpage/images/tentang_phapros.png') }}" alt="">
                 </div>
-                <div class="col-span-2 py-4">
-                    <p class="text-sm"><span class="ml-8"></span>PT Phapros Tbk berada di Jl. Simongan No. 131, Bongsari, Kec. Semarang Barat, Jawa Tengah. Pada
+                <div class="xl:col-span-2 py-4 bg-slate-100">
+                    <p class="text-sm"><span class="ml-8"></span>PT Phapros Tbk berada di Jl. Simongan No. 131, Bongsari,
+                        Kec. Semarang Barat, Jawa Tengah. Pada
                         tanggal 21 Juni 1954 PT. Phapros Tbk, didirikan oleh NV. Kian Gwan Handels Maatschappy (Prof. Liem
                         Wie Hock). PT Phapros Tbk termasuk bagian Oei Tiong Ham Concern (OTHC), yang merupakan konglomerat
                         pertama di Indonesia yang bergerak di bisnis gula dan agroindustry. Nama awal dari PT Phapros Tbk
                         adalah NV Pharmaceutical Processing Industries, yang kemudian disingkat menjadi Phapros.</p>
-                        <br>
-                    <p class="text-sm"><span class="ml-8"></span>Pada awalnya, OTHC memiliki 96% saham Phapros namun seiring perkembangan kepemilikan dari saham
+                    <br>
+                    <p class="text-sm"><span class="ml-8"></span>Pada awalnya, OTHC memiliki 96% saham Phapros namun
+                        seiring perkembangan kepemilikan dari saham
                         Phapros berubah, saat ini 54% saham dari PT Phapros Tbk dimiliki oleh PT. Rajawali Nusantara
                         Indonesia yaitu BUMN dibawah Departemen Keuangan dan 46% lainnya dimiliki oleh masyarakat umum,
                         terutama dari kalangan dokter, apoteker dan professional lainnya yang ada di bidang kesehatan yng
@@ -108,9 +110,9 @@
             <div class="swiper swiper-container-2 slide-container py-3 px-10">
                 <div class="swiper-wrapper">
                     {{-- @foreach ($latestCourse as $course) --}}
-                        <div class="swiper-slide">
-                            <x-course-card id="1"/>
-                        </div>
+                    <div class="swiper-slide">
+                        <x-course-card id="1" />
+                    </div>
                     {{-- @endforeach --}}
                 </div>
 

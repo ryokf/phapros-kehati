@@ -42,8 +42,6 @@
     </header>
     <!-- End Header / Hero Section -->
 
-
-
     <!-- Start Categories By Divisi Section -->
     <section id="categories">
         <div class="container mx-auto my-20">

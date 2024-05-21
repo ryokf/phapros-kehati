@@ -15,10 +15,10 @@
 
             </div> --}}
             {{-- <div class="mt-6 xl:w-2/5 md:w-1/2 lg:ml-8 md:ml-6 md:mt-0"> --}}
-                <div class="mt-6 w-2/3 lg:ml-8 md:ml-6 md:mt-0">
+            <div class="mt-6 w-full lg:w-2/3 lg:ml-8 md:ml-6 md:mt-0">
                 <div class="pb-6 border-b border-gray-200">
 
-                    <h1 class="my-2 text-3xl font-semibold text-gray-800 lg:text-4xl lg:leading-normal dark:text-white">
+                    <h1 class="my-2 text-2xl font-semibold text-gray-800 lg:text-4xl lg:leading-normal dark:text-white">
                         {{ $course->title }}</h1>
                     {{-- <div class="flex mt-4 ">
                         <div class="flex ">
@@ -39,9 +39,9 @@
                             {!! $course->description !!}
                         </p>
                     </div>
-                    <div class="my-5 grid grid-cols-2 w-full">
-                        <img src="{{ asset('Picture2.png') }}" alt="">
-                        <img src="{{ asset('Picture3.png') }}" alt="">
+                    <div class="my-5 grid grid-cols-1 md:grid-cols-2 w-full gap-2">
+                        <img src="{{ asset('Picture2.png') }}" alt="" class="m-auto">
+                        <img src="{{ asset('Picture3.png') }}" alt="" class="m-auto">
                     </div>
                 </div>
                 <div class="flex items-center justify-between py-4 border-b border-gray-200">

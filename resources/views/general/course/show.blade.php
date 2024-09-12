@@ -35,17 +35,128 @@
                 <div class="flex flex-col items-start py-4 border-b border-gray-200 ">
                     {{-- <p class="text-lg leading-4 text-gray-800 dark:text-gray-300">Description</p> --}}
                     <div class="flex items-center justify-center dark:text-gray-300">
-                        <p class="text-sm text-gray-600 ">
+                        <p class="text-sm text-gray-600 text-left ">
                             {!! $course->description !!}
                         </p>
                     </div>
-                    <div class="my-5 grid grid-cols-1 md:grid-cols-2 w-full gap-2">
-                        <img src="{{ asset('Picture2.png') }}" alt="" class="m-auto">
-                        <img src="{{ asset('Picture3.png') }}" alt="" class="m-auto">
+                    <div class="my-5 grid grid-cols-1 md:grid-cols- md:w-full gap-2 m-auto md:gap-x-2">
+                        <img src="{{ asset('Picture1.png') }}" alt="" class="m-auto max-w-xs md:max-w-xl">
+                        <img src="{{ asset('Picture2.png') }}" alt="" class="m-auto max-w-xs md:max-w-xl">
+                        <img src="{{ asset('Picture3.png') }}" alt="" class="m-auto max-w-xs md:max-w-xl">
+                        <img src="{{ asset('Picture4.png') }}" alt="" class="m-auto max-w-xs md:max-w-xl">
+                        <img src="{{ asset('Picture5.png') }}" alt="" class="m-auto max-w-xs md:max-w-xl">
                     </div>
-                </div>
-                <div class="flex items-center justify-between py-4 border-b border-gray-200">
-                    {{-- @if ($course->price == 0)
+                    <div class="my-4">
+                        <h2 class="text-xl font-semibold">Pojok galeri</h2>
+                        <div class="w-10/12 md:w-full m-auto">
+                            <p class="text-sm text-gray-600 mx-4 my-2">a. Konservasi Flora di Area Perusahaan :</p>
+                            <div class="grid grid-cols-1 md:grid-cols- gap-2 md:md:ml-10">
+                                <div class="">
+                                    <img src="{{ asset('Bisbul.jpg') }}" alt=""
+                                        class="m-auto aspect-square object-cover max-w-xs md:max-w-xl">
+                                    <p class="text-center mt-2 mb-4">Bisbul <i>(Diospyros blancoi)</i>
+                                    </p>
+                                </div>
+                                <div class="">
+                                    <img src="{{ asset('Kamboja.jpg') }}" alt=""
+                                        class="m-auto aspect-square object-cover max-w-xs md:max-w-xl">
+                                    <p class="text-center mt-2 mb-2">Kamboja <i>(Plumeria sp) </i>
+                                    </p>
+                                </div>
+                                <div class="">
+                                    <img src="{{ asset('EnamEnam.jpg') }}" alt=""
+                                        class="m-auto aspect-square object-cover max-w-xs md:max-w-xl">
+                                    <p class="text-center mt-2 mb-2">Enam- Enam
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-10/12 md:w-full m-auto">
+                            <p class="text-sm text-gray-600 mx-4 my-2">b. Konservasi Flora di Area Ex Situ Taman Pelangi
+                                Mardi Utomo :</p>
+                            <div class="grid grid-cols-1 md:grid-cols- md:ml-10">
+                                <img src="{{ asset('akar wangi.jpg') }}" alt=""
+                                    class="m-auto aspect-square object-cover max-w-xs md:max-w-xl">
+                                <p class="text-center mt-2 mb-2">Akar Wangi <i>(Chrysopogon zizanioides)</i>
+                                </p>
+                                <img src="{{ asset('gaharu.jpg') }}" alt=""
+                                    class="m-auto aspect-square object-cover max-w-xs md:max-w-xl">
+                                <p class="text-center mt-2 mb-2">Gaharu <i>(Aquilaria malaccensis)</i>
+                                </p>
+                                <img src="{{ asset('mahoni.jpg') }}" alt=""
+                                    class="m-auto aspect-square object-cover max-w-xs md:max-w-xl">
+                                <p class="text-center mt-2 mb-2">Mahoni <i>(Swietenia mahagoni)</i>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="w-10/12 md:w-full m-auto">
+                            <p class="text-sm text-gray-600 mx-4 my-2">c. Konservasi Fauna di Area Ex Situ Taman Pelangi
+                                Mardi Utomo :</p>
+                            <div class="grid grid-cols-1 md:grid-cols- md:ml-10">
+                                <div class="">
+                                    <img src="{{ asset('kambing.jpg') }}" alt=""
+                                        class="m-auto aspect-square object-cover max-w-xs md:max-w-xl">
+                                    <p class="text-center mt-2 mb-2">Kambing <i>(Capra aegagrus hircus)</i>
+                                    </p>
+                                </div>
+                                <div class="">
+                                    <img src="{{ asset('rusa timor.jpg') }}" alt=""
+                                        class="m-auto aspect-square object-cover max-w-xs md:max-w-xl">
+                                    <p class="text-center mt-2 mb-2">Rusa Timor <i>(Rusa timorensis)</i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-10/12 md:w-full m-auto">
+                            <p class="text-sm text-gray-600 mx-4 my-2">d. Konservasi Fauna di Area Ex Situ Taman Pelangi
+                                Mardi Utomo :</p>
+                            <div class="grid grid-cols-1 md:grid-cols- md:ml-10">
+                                <div class="">
+                                    <img src="{{ asset('angsana.jpeg') }}" alt=""
+                                        class="m-auto aspect-square object-cover max-w-xs md:max-w-xl">
+                                    <p class="text-center mt-2 mb-2">Kambing <i>(Capra aegagrus hircus)</i>
+                                    </p>
+                                </div>
+                                <div class="">
+                                    <img src="{{ asset('jati.jpeg') }}" alt=""
+                                        class="m-auto aspect-square object-cover max-w-xs md:max-w-xl">
+                                    <p class="text-center mt-2 mb-2">Rusa Timor <i>(Rusa timorensis)</i>
+                                    </p>
+                                </div>
+                                <div class="">
+                                    <img src="{{ asset('mahoni.jpg') }}" alt=""
+                                        class="m-auto aspect-square object-cover max-w-xs md:max-w-xl">
+                                    <p class="text-center mt-2 mb-2">Rusa Timor <i>(Rusa timorensis)</i>
+                                    </p>
+                                <div class="">
+                                    <img src="{{ asset('palem botol.jpeg') }}" alt=""
+                                        class="m-auto aspect-square object-cover max-w-xs md:max-w-xl">
+                                    <p class="text-center mt-2 mb-2">Rusa Timor <i>(Rusa timorensis)</i>
+                                    </p>
+                                </div>
+                                <div class="">
+                                    <img src="{{ asset('palem kuning.jpeg') }}" alt=""
+                                        class="m-auto aspect-square object-cover max-w-xs md:max-w-xl">
+                                    <p class="text-center mt-2 mb-2">Rusa Timor <i>(Rusa timorensis)</i>
+                                    </p>
+                                </div>
+                                <div class="">
+                                    <img src="{{ asset('eucalyptus deglupta.jpeg') }}" alt=""
+                                        class="m-auto aspect-square object-cover max-w-xs md:max-w-xl">
+                                    <p class="text-center mt-2 mb-2">Rusa Timor <i>(Rusa timorensis)</i>
+                                    </p>
+                                </div>
+                                <div class="">
+                                    <img src="{{ asset('gaharu.jpg') }}" alt=""
+                                        class="m-auto aspect-square object-cover max-w-xs md:max-w-xl">
+                                    <p class="text-center mt-2 mb-2">Rusa Timor <i>(Rusa timorensis)</i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between py-4 border-b border-gray-200">
+                        {{-- @if <i>($course->price == 0)
                         <a href="{{ route('freeCourse', ['id_course' => $course->id]) }}"
                             class=" focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 text-base flex items-center justify-center leading-none text-white bg-gradient-to-bl from-cyan-400 dark:from-purple-600 via-10% to-blue-500 dark:to-purple-700 shadow-inner shadow-zinc-100 dark:shadow-zinc-300 transition-all w-full py-4 hover:bg-gray-700 focus:outline-none rounded-lg">
                             Start Free Course
@@ -56,12 +167,12 @@
                             Enroll Now
                         </button>
                     @endif --}}
-                </div>
-                @php
-                    $menit = count($course->lessons) * 10;
-                    $no = 1;
-                @endphp
-                {{-- <div class="flex flex-col items-start py-4 border-b border-gray-200 ">
+                    </div>
+                    @php
+                        $menit = count($course->lessons) * 10;
+                        $no = 1;
+                    @endphp
+                    {{-- <div class="flex flex-col items-start py-4 border-b border-gray-200 ">
                     <p class="text-lg leading-4 text-gray-800 dark:text-gray-300">Course Content</p>
                     <p class="text-base leading-4 text-gray-800 dark:text-gray-300">{{ count($course->lessons) }}
                         sections • {{ $menit }} minutes total length</p>
@@ -96,10 +207,10 @@
                 </div> --}}
 
 
+                </div>
+
+
             </div>
-
-
-        </div>
 
 
 

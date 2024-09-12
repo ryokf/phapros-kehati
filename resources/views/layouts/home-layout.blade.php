@@ -13,8 +13,8 @@
     <!-- Font Awesome icons -->
     {{-- <link rel="stylesheet" href="./landingpage/css/font-awesome/css/all.min.css" /> --}}
     {{-- <link rel="stylesheet" href="{{ asset('/landingpage/css/font-awesome/css/all.min.css') }}" /> --}}
-    {{-- <link rel="stylesheet" href="https://9930-36-80-132-148.ngrok-free.app/build/assets/app-3969a407.css" />
-    <link rel="stylesheet" href="https://9930-36-80-132-148.ngrok-free.app/build/assets/app-4d615ca8.js" /> --}}
+    {{-- <link rel="stylesheet" href="https://a18d-36-80-192-172.ngrok-free.app/build/assets/app-27755fb9.css" />
+    <link rel="stylesheet" href="https://a18d-36-80-192-172.ngrok-free.app/build/assets/app-4d615ca8.js" /> --}}
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -139,7 +139,7 @@
                                     </div>
                                 </div>
                                 <!-- open mobile -->
-                                <div x-show="open"
+                                {{-- <div x-show="open"
                                     class="absolute right-10 block mt-10 text-left bg-white shadow top-10 overflow-y md:hidden"
                                     x-transition:enter="transition ease-out origin-top-left duration-200"
                                     x-transition:enter-start="opacity-0 transform scale-90"
@@ -181,7 +181,7 @@
                                         </li>
                                     </ul>
 
-                                </div>
+                                </div> --}}
                             </div>
                         </div>
                     @else
@@ -199,7 +199,7 @@
                     <!-- end tombol switch theme -->
 
                     <!-- nav toggle mobile -->
-                    <div class="my-auto ml-3 cursor-pointer lg:hidden block">
+                    {{-- <div class="my-auto ml-3 cursor-pointer lg:hidden block">
                         <span class="navbar-toggle
                         dark:text-white text-slate-900 lg:hidden">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -208,7 +208,7 @@
                                     d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                             </svg>
                         </span>
-                    </div>
+                    </div> --}}
 
                 </div>
             </div>
